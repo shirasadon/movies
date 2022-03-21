@@ -1,0 +1,15 @@
+<input [(ngModel)]="search" type="text" nbInput placeholder="search by name">
+
+<app-movie *ngFor="let mov of movie |searchByName:search" [movie]="mov" ></app-movie> 
+
+
+<nb-card size="medium">
+    <nb-card-header>
+    <h2>new movies</h2>
+    </nb-card-header>
+    <nb-list>
+      <nb-list-item style=" color: rgb(202, 12, 12);" *ngFor="let mov of movie | newMovies" >
+        {{ mov.name }}
+      </nb-list-item>
+    </nb-list>
+  </nb-card>

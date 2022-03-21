@@ -1,0 +1,8 @@
+<nb-card>
+    <nb-card-body  class="example-items-rows">
+      <input #name type="text" nbInput placeholder ="name ">
+      <input #year type="text" nbInput placeholder="year" >
+      <input #isnew type="checkbox" nbInput placeholder="isnew">
+      <button style="background-color:  rgb(202, 12, 12);" nbButton (click)="addmovie(name,year,isnew)">add movie</button>
+    </nb-card-body>
+  </nb-card>
